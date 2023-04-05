@@ -1,0 +1,83 @@
+@import '~theme';
+
+dialer {
+  @include clearfix;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  // width: 100%;
+  box-sizing: border-box;
+  #status {
+    background: #333;
+    color: white;
+    padding: 5px;
+    margin: 5px 0;
+    a {
+      color: red;
+    }
+  }
+  &.input-group {
+    input, span.input-group-addon {
+      border-color: #bbb;
+      -webkit-transition: border-color 0.5s ease-in-out;
+      -moz-transition: border-color 0.5s ease-in-out;
+      -ms-transition: border-color 0.5s ease-in-out;
+      -o-transition: border-color 0.5s ease-in-out;
+    }
+  }
+  form {
+    margin-block-end: 0em;
+    input:focus {
+      box-shadow: none;
+    }
+  }
+  .small-padding.left {
+    padding-left: 5px;
+  }
+  .small-padding.right {
+    padding-right: 5px;
+  }
+  &.screen,&.actions {
+      min-height: 39px;
+  }
+  &.bottom-action {
+      padding: 5px 0;
+      padding-top: 0px;
+  }
+
+  &.btn-group-justified .btn-group {
+    padding-right: 5px;
+  }
+
+  &.btn-group-justified .btn-group:last-child {
+      padding-right: 0px;
+  }
+  .number {
+    background: #f7f9fa;
+    border: 1px solid #e4e5e7;
+    color: #6a6c6f;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px;
+    min-height: 43px;
+    min-width: 0;
+    padding: 1px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    vertical-align: center;
+    width: 33.3333%;
+    &:hover {
+      background: #eee;
+      cursor: pointer;
+    }
+    span {
+      display: block;
+      font-size: 70%;
+      font-weight: normal;
+    }
+  }
+}

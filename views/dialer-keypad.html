@@ -1,0 +1,7 @@
+<dialer-keypad-key
+  characters="key.characters"
+  name="key.name"
+  ng-repeat="key in $ctrl.keys() track by $index"
+  on-click="$ctrl.onKeyPress(key.value)"
+  value="key.value"
+></dialer-keypad-key>
